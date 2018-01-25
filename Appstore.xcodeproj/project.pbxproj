@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		07731DE01F8AA8080075DE61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731DDF1F8AA8080075DE61 /* AppDelegate.swift */; };
-		07731DE21F8AA8080075DE61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731DE11F8AA8080075DE61 /* ViewController.swift */; };
 		07731DE51F8AA8080075DE61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07731DE31F8AA8080075DE61 /* Main.storyboard */; };
 		07731DE71F8AA8080075DE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07731DE61F8AA8080075DE61 /* Assets.xcassets */; };
 		07731DEA1F8AA8080075DE61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07731DE81F8AA8080075DE61 /* LaunchScreen.storyboard */; };
+		07731DF21F8AAA2C0075DE61 /* FeaturedAppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731DF11F8AAA2C0075DE61 /* FeaturedAppsController.swift */; };
+		07731DF41F8AAC860075DE61 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731DF31F8AAC860075DE61 /* CategoryCell.swift */; };
+		07731DF61F8B00C40075DE61 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731DF51F8B00C40075DE61 /* Models.swift */; };
+		07731DF81F8B3F600075DE61 /* AppDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731DF71F8B3F600075DE61 /* AppDetailController.swift */; };
+		07731DFA1F8B583F0075DE61 /* ScreenshotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731DF91F8B583F0075DE61 /* ScreenshotCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07731DDC1F8AA8080075DE61 /* Appstore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appstore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07731DDF1F8AA8080075DE61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07731DE11F8AA8080075DE61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07731DE41F8AA8080075DE61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07731DE61F8AA8080075DE61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07731DE91F8AA8080075DE61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07731DEB1F8AA8080075DE61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07731DF11F8AAA2C0075DE61 /* FeaturedAppsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedAppsController.swift; sourceTree = "<group>"; };
+		07731DF31F8AAC860075DE61 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		07731DF51F8B00C40075DE61 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		07731DF71F8B3F600075DE61 /* AppDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDetailController.swift; sourceTree = "<group>"; };
+		07731DF91F8B583F0075DE61 /* ScreenshotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenshotCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		07731DDE1F8AA8080075DE61 /* Appstore */ = {
 			isa = PBXGroup;
 			children = (
+				07A5C5A02019738F009B631A /* Models */,
+				07A5C5A12019739F009B631A /* Views */,
+				07A5C59F20197388009B631A /* Controllers */,
 				07731DDF1F8AA8080075DE61 /* AppDelegate.swift */,
-				07731DE11F8AA8080075DE61 /* ViewController.swift */,
 				07731DE31F8AA8080075DE61 /* Main.storyboard */,
 				07731DE61F8AA8080075DE61 /* Assets.xcassets */,
 				07731DE81F8AA8080075DE61 /* LaunchScreen.storyboard */,
 				07731DEB1F8AA8080075DE61 /* Info.plist */,
 			);
 			path = Appstore;
+			sourceTree = "<group>";
+		};
+		07A5C59F20197388009B631A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				07731DF71F8B3F600075DE61 /* AppDetailController.swift */,
+				07731DF11F8AAA2C0075DE61 /* FeaturedAppsController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		07A5C5A02019738F009B631A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07731DF51F8B00C40075DE61 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		07A5C5A12019739F009B631A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07731DF91F8B583F0075DE61 /* ScreenshotCell.swift */,
+				07731DF31F8AAC860075DE61 /* CategoryCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07731DE21F8AA8080075DE61 /* ViewController.swift in Sources */,
 				07731DE01F8AA8080075DE61 /* AppDelegate.swift in Sources */,
+				07731DF21F8AAA2C0075DE61 /* FeaturedAppsController.swift in Sources */,
+				07731DF41F8AAC860075DE61 /* CategoryCell.swift in Sources */,
+				07731DF81F8B3F600075DE61 /* AppDetailController.swift in Sources */,
+				07731DF61F8B00C40075DE61 /* Models.swift in Sources */,
+				07731DFA1F8B583F0075DE61 /* ScreenshotCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +342,7 @@
 				07731DF01F8AA8080075DE61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
