@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Appstore
 //
-//  Created by PAC on 10/9/17.
-//  Copyright © 2017 OneSignal. All rights reserved.
+//  Created by John Nik on 10/9/17.
+//  Copyright © 2017 johnik703. All rights reserved.
 //
 
 import UIKit
@@ -15,6 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let layout = UICollectionViewFlowLayout()
+        let featuredAppsController = FeaturedAppsController(collectionViewLayout: layout)
+        window?.rootViewController = UINavigationController(rootViewController: featuredAppsController)
+        
         // Override point for customization after application launch.
         return true
     }
